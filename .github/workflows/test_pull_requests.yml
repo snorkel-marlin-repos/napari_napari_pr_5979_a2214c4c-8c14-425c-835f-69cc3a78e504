@@ -18,7 +18,7 @@ jobs:
     name: Check Manifest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - uses: actions/setup-python@v4
         with:
           python-version: "3.x"
@@ -35,7 +35,7 @@ jobs:
     name: Check l18n syntax
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - uses: actions/setup-python@v4
         with:
           python-version: "3.x"
@@ -102,7 +102,7 @@ jobs:
         with:
           access_token: ${{ github.token }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       - name: Set up Python ${{ matrix.python }}
         uses: actions/setup-python@v4
@@ -166,7 +166,7 @@ jobs:
     name: ubuntu-latest 3.9 pip install
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           path: napari-from-github
 
@@ -197,7 +197,7 @@ jobs:
     name: test examples
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           path: napari-from-github
 
